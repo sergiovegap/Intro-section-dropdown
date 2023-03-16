@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <script src="https://kit.fontawesome.com/863c752609.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css"><!--eduardofierropro reset-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a class="logo" href="#"><img src="./images/logo.svg" alt="snap"></a>
+            <div id="mobil-menu" class="mobil-menu">
+                <button id="btn-open" class="btn-open">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button id="btn-close" class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div><!--.mobil-menu-->
+        </div>
+        <div id="links" class="links"><!--.desktop-menu-->
+            <div id="page-links" class="page-links">
+                <div id="features" class="features option">
+                    <div class="link-click">
+                        <a href="#">Features</a>
+                        <img class="arrow-down" src="./images/icon-arrow-down.svg" alt="arrow down">
+                    </div>
+                    <div name="submenu-features" id="submenu-features" class="submenu-features submenus">
+                        <a href="#" data-submenu="todo-list"><img src="./images/icon-todo.svg" alt="Todo list icon"><p>Todo List</p></a>
+                        <a href="#" data-submenu="calendar"><img src="./images/icon-calendar.svg" alt="Calendar icon"><p>Calendar</p></a>
+                        <a href="#" data-submenu="reminders"><img src="./images/icon-reminders.svg" alt="Reminders icon"><p>Reminders</p></a>
+                        <a href="#" data-submenu="planning"><img src="./images/icon-planning.svg" alt="Planning icon"><p>Planning</p></a>
+                    </div>
+                </div><!--.features-->
+                <div id="company" class="company option">
+                    <div id="link-click" class="link-click">
+                        <a href="#">Company</a>
+                        <img class="arrow-down-2" src="./images/icon-arrow-down.svg" alt="arrow down">
+                    </div>
+                    <div name="submenu-company" id="submenu-company" class="submenu-company submenus">
+                        <a href="#" data-submenu="Hhstory"><p>History</p></a>
+                        <a href="#" data-submenu="team"><p>Our Team</p></a>
+                        <a href="#" data-submenu="blog"><p>Blog</p></a>
+                    </div>
+                </div><!--.company-->
+                <a href="#">Careers</a>
+                <a href="#">About</a>
+            </div><!--.page-links-->
+            <div class="login" id="login">
+                <button id="login"><a href="#">Login</a></button>                        
+                <button id="register"><a href="#">Register</a></button>
+            </div><!--.login-->
+        </div><!--.links-->
+    </nav>
+
+    <main class="container">
+        <div class="content">
+            <div class="main-content">
+                <div class="mobile-banner"><!--mobile-banner-->
+                    <img src="./images/image-hero-mobile.png" alt="Image hero">
+                </div>
+                <div class="main-text">
+                    <h1 class="mobile-text">Make remote work</h1>
+                    <p class="mobile-p">Get your team in sync, no matter your location.Streamline processes,
+                        create team rituals, and watch productivity soar.</p>
+                    <h1 class="desktop-text">Make <br> remote work</h1>
+                    <p class="desktop-p">Get your team in sync, no matter your location.<br>Streamline processes,
+                    create team rituals, and <br> watch productivity soar.</p>
+                    <button id="learn-more"><a href="#">Learn more</a></button>
+                </div>
+                <div class="sponsors">
+                    <img src="./images/client-databiz.svg" alt="Databiz">
+                    <img src="./images/client-audiophile.svg" alt="Audio Phile">
+                    <img src="./images/client-meet.svg" alt="Meet">
+                    <img src="./images/client-maker.svg" alt="Maker">
+                </div>
+            </div><!--.main-content-->
+            <div class="banner">
+                <img src="./images/image-hero-desktop.png" alt="Image hero">
+            </div><!--.banner-->
+        </div><!--.content-->
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
